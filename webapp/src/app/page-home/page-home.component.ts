@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {Project} from "../project";
+import { Project } from "../project";
 import { ActivatedRoute } from "@angular/router";
-import {Language} from "../language";
 
 @Component({
   selector: 'app-page-home',

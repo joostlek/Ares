@@ -8,6 +8,8 @@ import { PageHomeComponent } from './page-home/page-home.component';
 import {AppRoutingModule} from "./app-routing.module";
 import { ToolbarComponent } from './toolbar/toolbar.component';
 import { PageContactComponent } from './page-contact/page-contact.component';
+import { PageAboutComponent } from './page-about/page-about.component';
+import { PageProjectComponent } from './page-project/page-project.component';
 
 
 @NgModule({
@@ -15,7 +17,10 @@ import { PageContactComponent } from './page-contact/page-contact.component';
     AppComponent,
     ProjectComponent,
     PageHomeComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    PageContactComponent,
+    PageAboutComponent,
+    PageProjectComponent,
   ],
   imports: [
     BrowserModule,

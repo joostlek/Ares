@@ -2,6 +2,7 @@
   <span>Joost Lekkerkerker</span>
   <span class="fill-remaining-space"></span>
   <a mat-button routerLink="." [color]="url == '/home' ? 'accent' : ''">Home</a>
-  <button mat-button [color]="url == '/contact' ? 'accent' : ''">Contact</button>
-  <button mat-button [color]="url == '/about' ? 'accent' : ''">About</button>
+  <a mat-button routerLink="project" [color]="url == '/project' ? 'accent' : ''">Projects</a>
+  <a mat-button routerLink="about" [color]="url == '/about' ? 'accent' : ''">About</a>
+  <a mat-button routerLink="contact" [color]="url == '/contact' ? 'accent' : ''">Contact</a>
 </mat-toolbar>
