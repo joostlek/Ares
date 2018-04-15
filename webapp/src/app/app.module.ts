@@ -4,17 +4,21 @@ import { MatCardModule, MatDividerModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { ProjectComponent } from './project/project.component';
+import { PageHomeComponent } from './page-home/page-home.component';
+import {AppRoutingModule} from "./app-routing.module";
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProjectComponent
+    ProjectComponent,
+    PageHomeComponent
   ],
   imports: [
     BrowserModule,
     MatCardModule,
-    MatDividerModule
+    MatDividerModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
