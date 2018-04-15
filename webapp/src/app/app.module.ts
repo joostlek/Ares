@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatCardModule, MatDividerModule } from '@angular/material';
+import {MatButtonModule, MatCardModule, MatChipsModule, MatDividerModule} from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { ProjectComponent } from './project/project.component';
@@ -18,6 +18,8 @@ import {AppRoutingModule} from "./app-routing.module";
     BrowserModule,
     MatCardModule,
     MatDividerModule,
+    MatChipsModule,
+    MatButtonModule,
     AppRoutingModule
   ],
   providers: [],

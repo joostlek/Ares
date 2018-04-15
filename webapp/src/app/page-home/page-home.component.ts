@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Project} from "../project";
 import { ActivatedRoute } from "@angular/router";
+import {Language} from "../language";
 
 @Component({
   selector: 'app-page-home',
@@ -9,7 +10,7 @@ import { ActivatedRoute } from "@angular/router";
 })
 export class PageHomeComponent implements OnInit {
   projects: Project[] = [
-    new Project(1, 'Ares'),
+    new Project(1, 'Ares', [{id:1, name:'Python'}], [{id:1, name:'Angular 5'}]),
   ];
   constructor(
     private route: ActivatedRoute,

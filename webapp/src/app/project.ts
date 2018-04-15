@@ -1,13 +1,16 @@
-import {Social} from "./social";
+import {Language} from "./language";
+import {Framework} from "./framework";
 
 export class Project {
   id: number;
   name: string;
-  socials: Social[];
+  languages: Language[];
+  frameworks: Framework[];
 
-  constructor(id: number, name: string) {
+  constructor(id: number, name: string, languages: Language[], frameworks: Framework[]) {
     this.id = id;
     this.name = name;
-    this.socials = [];
+    this.languages = languages;
+    this.frameworks = frameworks;
   }
 }
