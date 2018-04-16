@@ -1,0 +1,8 @@
+mat-chip-list {
+  overflow-x: scroll;
+  padding-bottom: 16px;
+}
+
+caption {
+  padding-bottom: 16px;
+}

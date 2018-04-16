@@ -1,0 +1,20 @@
+<div class="" fxLayout="row wrap" fxLayout.xs="column" fxLayout.sm="column" fxLayoutGap="1%" fxLayoutAlign="left" *ngIf="project"
+     [ngClass]="{'container-mob':false, 'container-full': true}"
+     [ngClass.sm]="{'container-mob':true, 'container-full': false}"
+     [ngClass.xs]="{'container-mob':true, 'container-full': false}">
+  <mat-card fxFlex="66">
+    <mat-card-title>
+      {{project.name}}
+    </mat-card-title>
+    <mat-card-subtitle>
+      {{project.description}}
+    </mat-card-subtitle>
+  </mat-card>
+  <div fxFlex="33">
+    <mat-card>
+      <mat-card-title>
+        HEY
+      </mat-card-title>
+    </mat-card>
+  </div>
+</div>

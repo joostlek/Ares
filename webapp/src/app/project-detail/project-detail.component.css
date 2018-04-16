@@ -1,0 +1,10 @@
+.container-full {
+  width: 75%;
+  margin: auto;
+  min-height: 100%;
+}
+.container-mob {
+  width: 100%;
+  margin: auto;
+  min-height: 100%;
+}
