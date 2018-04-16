@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from "../project";
 import { ActivatedRoute } from "@angular/router";
+import {ProjectService} from "../project.service";
 
 @Component({
   selector: 'app-page-home',
@@ -8,15 +9,18 @@ import { ActivatedRoute } from "@angular/router";
   styleUrls: ['./page-home.component.css']
 })
 export class PageHomeComponent implements OnInit {
-  projects: Project[] = [
-    new Project(1, 'Ares', [{id:1, name:'Python'}], [{id:1, name:'Angular 5'}]),
-  ];
+  projects: Project[];
   constructor(
     private route: ActivatedRoute,
+    private projectService: ProjectService,
   ) { }
 
   ngOnInit() {
-
+    this.getProjects();
   }
 
+  getProjects(): void {
+    this.projectService.getProjects()
+      .subscribe(projects => this.projects = projects);
+  }
 }

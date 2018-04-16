@@ -10,6 +10,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { PageContactComponent } from './page-contact/page-contact.component';
 import { PageAboutComponent } from './page-about/page-about.component';
 import { PageProjectComponent } from './page-project/page-project.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import {ProjectService} from "./project.service";
 
 
 @NgModule({
@@ -29,9 +31,12 @@ import { PageProjectComponent } from './page-project/page-project.component';
     MatChipsModule,
     MatButtonModule,
     MatToolbarModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FlexLayoutModule
   ],
-  providers: [],
+  providers: [
+    ProjectService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
