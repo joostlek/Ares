@@ -1,13 +1,6 @@
-<div class="container" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutWrap fxLayoutGap="0.5%" fxLayoutAlign="center">
-  <div fxFlex="20"
-  fxFlex.sm="50">
-    <img mat-card-image class="img" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg">
-  </div>
-  <div fxFlex="20%"
-  fxFlex.lg="50">
-    <img mat-card-image class="img" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/LTLE4QGRVQ.jpg">
-  </div>
-  <div fxFlex="20%">
-    <img mat-card-image class="img" src="https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/R926LU1YEA.jpg">
-  </div>
+<div class="" fxLayout="row wrap" fxLayout.xs="column" fxLayout.sm="column" fxLayoutGap="1%" fxLayoutAlign="left"
+     [ngClass]="{'container-mob':false, 'container-full': true}"
+     [ngClass.sm]="{'container-mob':true, 'container-full': false}"
+     [ngClass.xs]="{'container-mob':true, 'container-full': false}">
+  <project *ngFor="let project of projects;" [project]="project" fxFlex=""></project>
 </div>

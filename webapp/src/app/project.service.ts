@@ -7,7 +7,10 @@ import {of} from "rxjs/observable/of";
 export class ProjectService {
   projects: Project[] = [
     new Project(1, 'Ares', [{id:1, name:'Python'}], [{id:1, name:'Angular 5'}]),
-    new Project(2, 'Ares', [{id:1, name:'Python'}], [{id:1, name:'Angular 5'}]),
+    new Project(2, 'Dionysos', [{id:1, name:'Python'}], [{id:1, name:'Angular 5'}]),
+    new Project(3, 'Hermes', [{id:1, name:'Python'}], [{id:1, name:'Angular 5'}]),
+    new Project(4, 'Ares', [{id:1, name:'Python'}], [{id:1, name:'Angular 5'}]),
+    new Project(5, 'Ares', [{id:1, name:'Python'}], [{id:1, name:'Angular 5'}]),
   ];
   constructor() { }
 
