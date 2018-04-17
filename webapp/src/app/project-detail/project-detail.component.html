@@ -1,3 +1,8 @@
+<span fxHide.xs="true" fxHide.sm="true" class="container-full back">
+  <button mat-button="" (click)="goBack()">
+      Go back
+  </button>
+</span>
 <div class="" fxLayout="row wrap" fxLayout.xs="column" fxLayout.sm="column" fxLayoutGap="1%" fxLayoutAlign="left" *ngIf="project"
      [ngClass]="{'container-mob':false, 'container-full': true}"
      [ngClass.sm]="{'container-mob':true, 'container-full': false}"
@@ -8,12 +13,9 @@
         <mat-card-title>
           {{project.name}}
         </mat-card-title>
-        <mat-card-subtitle>
-          {{project.description}}
-        </mat-card-subtitle>
       </div>
     </mat-card>
-    <mat-card class="images">
+    <mat-card class="images" *ngIf="project._images.length > 0">
       <slideshow [imageUrls]="project._images"
                  [minHeight]="'300px'"
                  [autoPlay]="true"></slideshow>
