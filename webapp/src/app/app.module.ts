@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {
-  MatButtonModule, MatCardModule, MatChipsModule, MatDividerModule, MatExpansionModule,
+  MatButtonModule, MatCardModule, MatChipsModule, MatDividerModule, MatExpansionModule, MatFormFieldModule,
   MatToolbarModule
 } from '@angular/material';
 
@@ -16,6 +16,9 @@ import { PageProjectComponent } from './page-project/page-project.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {ProjectService} from "./project.service";
 import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { SocialComponent } from './social/social.component';
+import {SlideshowModule} from "ng-simple-slideshow";
 
 
 @NgModule({
@@ -28,6 +31,7 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
     PageAboutComponent,
     PageProjectComponent,
     ProjectDetailComponent,
+    SocialComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,9 +40,12 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
     MatChipsModule,
     MatButtonModule,
     MatExpansionModule,
+    MatFormFieldModule,
     MatToolbarModule,
     AppRoutingModule,
     FlexLayoutModule,
+    BrowserAnimationsModule,
+    SlideshowModule,
   ],
   providers: [
     ProjectService,

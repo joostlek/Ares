@@ -1,5 +1,6 @@
 import {Language} from "./language";
 import {Framework} from "./framework";
+import {Social} from "./social";
 
 export class Project {
   id: number;
@@ -7,6 +8,9 @@ export class Project {
   description: string;
   languages: Language[];
   frameworks: Framework[];
+  _full_description: string;
+  _socials: Social[];
+  _images: string[];
 
   constructor(id: number, name: string, description: string, languages: Language[], frameworks: Framework[]) {
     this.id = id;
@@ -14,5 +18,17 @@ export class Project {
     this.description = description;
     this.languages = languages;
     this.frameworks = frameworks;
+  }
+
+  set socials(value: Social[]) {
+    this._socials = value;
+  }
+
+  set images(value: string[]) {
+    this._images = value;
+  }
+
+  set full_description(value: string) {
+    this._full_description = value;
   }
 }

@@ -2,19 +2,48 @@
      [ngClass]="{'container-mob':false, 'container-full': true}"
      [ngClass.sm]="{'container-mob':true, 'container-full': false}"
      [ngClass.xs]="{'container-mob':true, 'container-full': false}">
-  <mat-card fxFlex="66">
-    <mat-card-title>
-      {{project.name}}
-    </mat-card-title>
-    <mat-card-subtitle>
-      {{project.description}}
-    </mat-card-subtitle>
-  </mat-card>
-  <div fxFlex="33">
+  <div fxFlex="66">
+    <mat-card>
+      <div>
+        <mat-card-title>
+          {{project.name}}
+        </mat-card-title>
+        <mat-card-subtitle>
+          {{project.description}}
+        </mat-card-subtitle>
+      </div>
+    </mat-card>
+    <mat-card class="images">
+      <slideshow [imageUrls]="project._images"
+                 [minHeight]="'300px'"
+                 [autoPlay]="true"></slideshow>
+    </mat-card>
     <mat-card>
       <mat-card-title>
-        HEY
+        Description
       </mat-card-title>
+      <mat-card-content>
+        {{project._full_description}}
+      </mat-card-content>
     </mat-card>
+  </div>
+  <div fxFlex="33" class="expansion">
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Links
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+        <social *ngFor="let social of project._socials" [social]="social"></social>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            Related Projects
+          </mat-panel-title>
+        </mat-expansion-panel-header>
+      </mat-expansion-panel>
+    </mat-accordion>
   </div>
 </div>

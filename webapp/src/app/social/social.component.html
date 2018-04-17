@@ -1,0 +1,11 @@
+<a *ngIf="social" [href]="social.url">
+  <mat-card-title *ngIf="social.customName == ''; else customname">
+    {{social.name}}
+  </mat-card-title>
+  <ng-template #customname>
+    <mat-card-title>
+      {{social.customName}}
+    </mat-card-title>
+  </ng-template>
+
+</a>
