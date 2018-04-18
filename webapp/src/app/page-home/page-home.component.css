@@ -1,0 +1,22 @@
+mat-card {
+  width: fit-content;
+}
+
+.container-full {
+  width: 75%;
+  margin: auto;
+  min-height: 100%;
+}
+.container-mob {
+  width: 100%;
+  margin: auto;
+  min-height: 100%;
+}
+
+.inner-container {
+  width: 75%;
+}
+
+mat-card-content, mat-card-title.more {
+  text-align: center;
+}

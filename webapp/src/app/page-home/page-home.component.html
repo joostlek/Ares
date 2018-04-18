@@ -1,3 +1,24 @@
-<div *ngFor="let proj of projects">
-  <project [project]="proj"></project>
+<div class="container"
+     [ngClass]="{'container-mob':false, 'container-full': true}"
+     [ngClass.sm]="{'container-mob':true, 'container-full': false}"
+     [ngClass.xs]="{'container-mob':true, 'container-full': false}">
+  <mat-card>
+    <mat-card-title>
+      Joost Lekkerkerker
+    </mat-card-title>
+    <mat-card-subtitle>
+      19 years old / Developer / IT-student
+    </mat-card-subtitle>
+  </mat-card>
+  <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutGap="1%" fxLayoutAlign="center">
+    <project *ngFor="let project of projects | slice:0:2" [project]="project" fxFlex="25" [extended]=false></project>
+    <mat-card fxFlex="25">
+      <mat-card-title class="more">
+        Checkout more projects
+      </mat-card-title>
+      <mat-card-content>
+        <a mat-fab routerLink="/project"><mat-icon svgIcon="chevron right"></mat-icon></a>
+      </mat-card-content>
+    </mat-card>
+  </div>
 </div>

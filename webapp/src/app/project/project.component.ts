@@ -7,7 +7,7 @@ import {Project} from "../project";
   styleUrls: ['./project.component.css']
 })
 export class ProjectComponent implements OnInit {
-
+  @Input() extended: boolean = true;
   @Input() project: Project;
   constructor() { }
 

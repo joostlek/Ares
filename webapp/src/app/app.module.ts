@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {
-  MatButtonModule, MatCardModule, MatChipsModule, MatDividerModule, MatExpansionModule, MatFormFieldModule,
+  MatButtonModule, MatCardModule, MatChipsModule, MatDividerModule, MatExpansionModule, MatFormFieldModule, MatIconModule,
   MatToolbarModule
 } from '@angular/material';
 
@@ -46,6 +46,7 @@ import {SlideshowModule} from "ng-simple-slideshow";
     FlexLayoutModule,
     BrowserAnimationsModule,
     SlideshowModule,
+    MatIconModule,
   ],
   providers: [
     ProjectService,

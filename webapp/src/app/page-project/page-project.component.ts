@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Project} from "../project";
 import {ProjectService} from "../project.service";
+import { SlicePipe } from '@angular/common';
 
 @Component({
   selector: 'app-page-project',

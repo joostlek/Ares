@@ -5,8 +5,8 @@
   <mat-card-subtitle>
     {{project.description}}
   </mat-card-subtitle>
-  <mat-divider></mat-divider>
-  <caption>
+  <mat-divider *ngIf="extended"></mat-divider>
+  <caption *ngIf="extended">
     <p>
       Languages
     </p>
@@ -14,8 +14,8 @@
       <mat-chip *ngFor="let language of project.languages">{{language.name}}</mat-chip>
     </mat-chip-list>
   </caption>
-  <mat-divider></mat-divider>
-  <caption>
+  <mat-divider *ngIf="extended"></mat-divider>
+  <caption *ngIf="extended">
     <p>
       Frameworks
     </p>

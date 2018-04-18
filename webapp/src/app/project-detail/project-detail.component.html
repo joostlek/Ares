@@ -1,4 +1,4 @@
-<span fxHide.xs="true" fxHide.sm="true" class="container-full back">
+<span fxHide.xs="true" fxHide.sm="true" class="back">
   <button mat-button="" (click)="goBack()">
       Go back
   </button>
@@ -9,11 +9,9 @@
      [ngClass.xs]="{'container-mob':true, 'container-full': false}">
   <div fxFlex="66">
     <mat-card>
-      <div>
-        <mat-card-title>
-          {{project.name}}
-        </mat-card-title>
-      </div>
+      <mat-card-title>
+        {{project.name}}
+      </mat-card-title>
     </mat-card>
     <mat-card class="images" *ngIf="project._images.length > 0">
       <slideshow [imageUrls]="project._images"
