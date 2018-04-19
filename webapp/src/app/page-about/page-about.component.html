@@ -1,3 +1,13 @@
-<p>
-  page-about works!
-</p>
+<div class="" fxLayout="row wrap" fxLayout.xs="column" fxLayout.sm="column" fxLayoutGap="1%" fxLayoutAlign="left"
+     [ngClass]="{'container-mob':false, 'container-full': true}"
+     [ngClass.sm]="{'container-mob':true, 'container-full': false}"
+     [ngClass.xs]="{'container-mob':true, 'container-full': false}">
+  <mat-card>
+    <mat-card-title>
+      Joost Lekkerkerker
+    </mat-card-title>
+    <mat-card-content>
+      {{info.info}}
+    </mat-card-content>
+  </mat-card>
+</div>

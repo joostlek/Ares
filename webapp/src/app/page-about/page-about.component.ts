@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {InfoService} from "../info.service";
 
 @Component({
   selector: 'app-page-about',
@@ -6,10 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./page-about.component.css']
 })
 export class PageAboutComponent implements OnInit {
-
-  constructor() { }
+  info: any;
+  constructor(private infoService: InfoService) { }
 
   ngOnInit() {
+    this.getInfo();
   }
 
+  getInfo(): void {
+    this.infoService.getInfo()
+      .subscribe(info => this.info = info);
+  }
 }

@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import {Observable} from "rxjs/Observable";
 import {Project} from "./project";
 import {of} from "rxjs/observable/of";
-import {Social} from "./social"
 
 @Injectable()
 export class ProjectService {

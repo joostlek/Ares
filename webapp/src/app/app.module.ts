@@ -10,7 +10,6 @@ import { ProjectComponent } from './project/project.component';
 import { PageHomeComponent } from './page-home/page-home.component';
 import {AppRoutingModule} from "./app-routing.module";
 import { ToolbarComponent } from './toolbar/toolbar.component';
-import { PageContactComponent } from './page-contact/page-contact.component';
 import { PageAboutComponent } from './page-about/page-about.component';
 import { PageProjectComponent } from './page-project/page-project.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -19,6 +18,7 @@ import { ProjectDetailComponent } from './project-detail/project-detail.componen
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { SocialComponent } from './social/social.component';
 import {SlideshowModule} from "ng-simple-slideshow";
+import {InfoService} from "./info.service";
 
 
 @NgModule({
@@ -27,7 +27,6 @@ import {SlideshowModule} from "ng-simple-slideshow";
     ProjectComponent,
     PageHomeComponent,
     ToolbarComponent,
-    PageContactComponent,
     PageAboutComponent,
     PageProjectComponent,
     ProjectDetailComponent,
@@ -50,6 +49,7 @@ import {SlideshowModule} from "ng-simple-slideshow";
   ],
   providers: [
     ProjectService,
+    InfoService,
   ],
   bootstrap: [AppComponent]
 })
