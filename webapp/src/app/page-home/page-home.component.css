@@ -1,22 +1,36 @@
-mat-card {
+.container-full > mat-card.intro {
   width: fit-content;
 }
 
 .container-full {
-  width: 75%;
+  width: 66%;
   margin: auto;
-  min-height: 100%;
 }
+
+.container-full > .intro {
+  margin-top: 200px;
+}
+
+.container-full > .projects {
+  margin-top: 300px;
+}
+
 .container-mob {
   width: 100%;
   margin: auto;
-  min-height: 100%;
 }
 
-.inner-container {
-  width: 75%;
+.container-mob > .intro {
+  margin-top: 150px ;
 }
+
+.container-mob > .projects {
+  margin-top: 16px;
+}
+
+
 
 mat-card-content, mat-card-title.more {
   text-align: center;
 }
+
