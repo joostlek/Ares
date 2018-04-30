@@ -5,20 +5,20 @@ import {
   MatToolbarModule
 } from '@angular/material';
 
-import { AppComponent } from './app.component';
-import { ProjectComponent } from './project/project.component';
-import { PageHomeComponent } from './page-home/page-home.component';
-import {AppRoutingModule} from "./app-routing.module";
-import { ToolbarComponent } from './toolbar/toolbar.component';
-import { PageAboutComponent } from './page-about/page-about.component';
-import { PageProjectComponent } from './page-project/page-project.component';
+import { AppComponent } from '@app/app.component';
+import { ProjectComponent } from '@app/project/project.component';
+import { PageHomeComponent } from '@app/page-home/page-home.component';
+import {AppRoutingModule} from "@app/app-routing.module";
+import { ToolbarComponent } from '@app/toolbar/toolbar.component';
+import { PageAboutComponent } from '@app/page-about/page-about.component';
+import { PageProjectComponent } from '@app/page-project/page-project.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import {ProjectService} from "./project.service";
-import { ProjectDetailComponent } from './project-detail/project-detail.component';
+import {ProjectService} from "@app/project.service";
+import { ProjectDetailComponent } from '@app/project-detail/project-detail.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { SocialComponent } from './social/social.component';
+import { SocialComponent } from '@app/social/social.component';
 import {SlideshowModule} from "ng-simple-slideshow";
-import {InfoService} from "./info.service";
+import {InfoService} from "@app/info.service";
 
 
 @NgModule({

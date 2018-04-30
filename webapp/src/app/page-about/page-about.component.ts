@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {InfoService} from "../info.service";
+import {InfoService} from "@app/info.service";
 
 @Component({
   selector: 'app-page-about',

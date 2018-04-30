@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from "@angular/router";
-import {PageHomeComponent} from "./page-home/page-home.component";
-import {PageAboutComponent} from "./page-about/page-about.component";
-import {PageProjectComponent} from "./page-project/page-project.component";
-import {ProjectDetailComponent} from "./project-detail/project-detail.component";
+import {PageHomeComponent} from "@app/page-home/page-home.component";
+import {PageAboutComponent} from "@app/page-about/page-about.component";
+import {PageProjectComponent} from "@app/page-project/page-project.component";
+import {ProjectDetailComponent} from "@app/project-detail/project-detail.component";
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},

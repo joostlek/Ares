@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Social} from "../social";
+import {Social} from "@app/social";
 
 @Component({
   selector: 'social',

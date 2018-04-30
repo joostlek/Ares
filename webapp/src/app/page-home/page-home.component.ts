@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Project } from "../project";
+import { Project } from "@app/project";
 import { ActivatedRoute } from "@angular/router";
-import {ProjectService} from "../project.service";
-import { SlicePipe } from '@angular/common';
+import {ProjectService} from "@app/project.service";
 
 @Component({
   selector: 'app-page-home',

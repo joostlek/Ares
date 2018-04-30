@@ -1,6 +1,6 @@
-import {Language} from "./language";
-import {Framework} from "./framework";
-import {Social} from "./social";
+import {Language} from "@app/language";
+import {Framework} from "@app/framework";
+import {Social} from "@app/social";
 
 export class Project {
   id: number;
